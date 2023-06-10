@@ -11,10 +11,13 @@ import './popup.css';
     const searchBox = document.getElementById('search-box') as HTMLInputElement;
 
     searchBtn?.addEventListener('click', async () => {
-      const url =
-        'https://corsproxy.io/?https://parabank.parasoft.com/parabank/index.htm'; //searchBox?.value;
+      try {
+        const url = new URL(searchBox?.value);
 
-      send_url(url);
+        send_url('https://corsproxy.io/?' + url.toString());
+      } catch (error: any) {
+        alert(error.message);
+      }
     });
   });
 })();
