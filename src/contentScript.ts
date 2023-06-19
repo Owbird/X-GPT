@@ -20,9 +20,10 @@ window.onload = function () {
 
     if (message.event === 'insert-content') {
       if (promptTextArea.value) {
-        promptTextArea.value = promptTextArea.value + `/n${message.payload}`;
+        promptTextArea.value =
+          promptTextArea.value + `/n${message.payload.content}`;
       } else {
-        promptTextArea.value = message.payload;
+        promptTextArea.value = message.payload.content;
       }
 
       adjustTextareaHeight();

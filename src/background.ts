@@ -40,8 +40,13 @@ chrome.runtime.onMessage.addListener((message: Message, _, sendResponse) => {
     get_content(message.payload.url).then((content) => {
       chrome.tabs.sendMessage<Message>(message.payload.tabId, {
         event: 'insert-content',
-        payload: content,
+        payload: {
+          content,
+        },
       });
     });
+  } else {
+    //Forward request to contentScript
+    chrome.tabs.sendMessage<Message>(message.payload.tabId, message);
   }
 });
