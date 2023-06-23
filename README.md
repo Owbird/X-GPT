@@ -19,6 +19,13 @@ This is a browser extension that allows users to easily import web data and read
 4. Click on "Load Unpacked" or "Load Extension" and select the directory containing the extension source code.
 5. The extension will be installed and ready to use.
 
+### Roadmap
+
+- [x] Import web data
+- [x] Import text file
+- [] Import PDF & Word documents
+- [] Pretty print responses
+
 ### Usage
 
 1. Click on the extension icon in your browser toolbar to open the extension popup.
