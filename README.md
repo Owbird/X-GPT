@@ -1,3 +1,5 @@
+<img height=100 weight=100 src="public/logo.png" />
+
 # X-GPT - Chrome Extension
 
 This is a browser extension that allows users to easily import web data and read text files, modify them and use as ChatGPT prompt.
@@ -47,6 +49,8 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 
 This extension was developed using HTML, CSS, and JavaScript. It utilizes various web technologies and libraries to provide its functionality. We would like to acknowledge the developers and contributors of those technologies and libraries for their valuable work.
 
-- [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) - The CLI for your next Chrome Extension features.
+- [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli)
+- [Chrome Extension Icon Generator](https://alexleybourne.github.io/chrome-extension-icon-generator/)
+- [Logo Generator](https://logo.com)
 
 ---
